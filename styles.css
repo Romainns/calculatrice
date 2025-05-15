@@ -5,14 +5,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
-}
-
-.calculatrice-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    background-color: #a85757;
 }
 
 .calculatrice {
@@ -22,7 +15,6 @@ body, html {
     padding: 20px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 input, select, button {
