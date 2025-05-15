@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculatrice</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="Calculatrice">
-        <input type="number" id="number1" placeholder="Nombre 1">
-        <select id="operation">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-        </select>
-        <input type="number" id="number2" placeholder="Nombre 2">
-        <button id="calculate">Calculer</button>
-        <div class="result">
-            <!-- Le résultat sera affiché ici -->
+    <div class="calculatrice-container">
+        <div class="calculatrice">
+            <input type="number" id="number1" placeholder="Nombre 1">
+            
+            <select id="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+
+            <input type="number" id="number2" placeholder="Nombre 2">
+
+            <button id="calculate">Calculer</button>
+
+            <div class="result"></div>
+            <div class="error-message"></div> 
+
+            <h2>Historique des opérations</h2>
+            <div id="history"></div>
         </div>
-        <h2>Historique des opérations</h2>
-        <div id="history">
-            <!-- L'historique apparaîtra ici -->
-        </div>
+    </div>
 
     <script src="main.js"></script>
-    </div>
 </body>
 </html>
