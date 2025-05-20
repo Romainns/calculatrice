@@ -1,3 +1,5 @@
+import { addition, soustraction, multiplication, division } from './calcul.js';
+
 let calculer = document.getElementById('calculate');
 let historique = [];
 let compteur = 1;
@@ -37,25 +39,20 @@ calculer.addEventListener('click', function () {
     }
 
     if (operation.value === '+') {
-        result = num1 + num2;
+        result = addition(num1, num2);
     } else if (operation.value === '-') {
-        result = num1 - num2;
+        result = soustraction(num1, num2);
     } else if (operation.value === '*') {
-        result = num1 * num2;
+        result = multiplication(num1, num2);
     } else if (operation.value === '/') {
-        if (num2 === 0) {
-            number2.classList.add('error-input');
-            errorMessage.textContent = 'Erreur : division par zéro';
-            return;
-        }
-        result = num1 / num2;
+        result = division(num1, num2);
     } else {
         errorMessage.textContent = 'Opération non valide';
         return;
     }
 
     // Couleur du résultat
-    if (result > 0) {
+    if (result >= 0) {
         resultat.classList.add('positive');
     } else if (result < 0) {
         resultat.classList.add('negative');
