@@ -1,0 +1,32 @@
+{
+  "name": "calculatrice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Romainns/calculatrice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Romainns/calculatrice/issues"
+  },
+  "homepage": "https://github.com/Romainns/calculatrice#readme",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  }
+}
